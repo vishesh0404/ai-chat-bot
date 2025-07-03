@@ -4,7 +4,8 @@ spring:
       api-key: ${OPENROUTER_API_KEY}
       base_url: ${OPENAI_BASE_URL:https://openrouter.ai/api}
       chat:
-        model: deepseek/deepseek-chat
+        model: deepseek/deepseek-r1:free
+        #model: deepseek/deepseek-chat
 
 logging:
   level:
