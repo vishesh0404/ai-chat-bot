@@ -1,0 +1,37 @@
+spring:
+  ai:
+    openai:
+      api-key: ${OPENROUTER_API_KEY}
+      base_url: ${OPENAI_BASE_URL:https://openrouter.ai/api}
+      chat:
+        model: deepseek/deepseek-chat
+
+logging:
+  level:
+    org.springframework.web.client.RestTemplate: DEBUG
+    org.springframework.ai: DEBUG
+
+
+
+#spring:
+#  ai:
+#    model:
+#      chat: vertexai
+#    vertex:
+#      ai:
+#        gemini:
+#          project-id: not-needed
+#          location: ignored
+#          api-endpoint: https://generativelanguage.googleapis.com
+#    gemini:
+#      chat:
+#        options:
+#          model: gemini-pro
+
+#spring:
+#  ai:
+#    gemini:
+#      api-key: ${GEMINI_API_KEY}
+#      chat:
+#        options:
+#          model: gemini-pro
